@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+	--dark-chocolate: #000000;
+	--brownie:        #696969;
+	--raspberry:      #F00359;
+	--pistachio2:     #4EEF76;
+	--bluemoon:       #3545A1;
+	--blueberry:      #583C6F;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--dark-chocolate);
+	font-family: 'Press Start 2P', system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 75px;
+	padding: 1rem;
+	font-size: 24px;
+}
+
+header a{
+	background-color: var(--brownie);
+	border-radius: 50%;
+	border: 4px solid var(--brownie);
+}
+
+
+#logo{
+	color: var(--raspberry);
+	border-radius: 10px;
+	background-color: var(--dark-chocolate);
+	padding: 1rem 1rem 0.60rem 1rem;
+}
+
+#search{
+	outline: none;
+	color: var(--dark-chocolate);
+	border: none;
+	border-radius: 10px;
+	flex: 1;
+	height: 2rem;
+	padding: 1.25rem;
+	margin: 0 1rem;
+	font-size: 1.0rem;
+	font-family: 'Press Start 2P', system-ui;
+	font-weight: bold;
+}
+
+main{
+	padding: 20px;
+}
+
+#platforms{
+	display: grid;
+	grid-template-columns: auto;
+	gap: 2rem;
+}
+
+.platform{
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: var(--blueberry);
+	transition-duration: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.platform > .name{
+	color: var(--pistachio2);
+	text-align: center;
+}
+
+.platform:hover{
+	border: 4px solid var(--brownie);
+	border-radius: 10px;
+	background-color: var(--dark-chocolate);
+	transition-duration: 0.3s;
+}
